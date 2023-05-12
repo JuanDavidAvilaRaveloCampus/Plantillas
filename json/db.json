@@ -1,0 +1,116 @@
+{
+    "centro_aeroespacial": [
+        {
+            "reclutas": [
+                {
+                    "id": 0,
+                    "name": "Juan",
+                    "last_name": "Avila",
+                    "edad": 20,
+                    "email": "juanavila8856@gmail.com",
+                    "num_id": 1005210392,
+                    "fecha_ingreso": "14/12/12",
+                    "id_team": 2
+                },
+                {
+                    "id": 1,
+                    "name": "Pedro",
+                    "last_name": "Avila",
+                    "edad": 20,
+                    "email": "juanavila8856@gmail.com",
+                    "num_id": 1005210392,
+                    "fecha_ingreso": "14/12/12",
+                    "id_team": 1
+                },
+                {
+                    "id": 2,
+                    "name": "Juan",
+                    "last_name": "Galvis",
+                    "edad": 20,
+                    "email": "juanavila8856@gmail.com",
+                    "num_id": 1005210392,
+                    "fecha_ingreso": "14/12/12",
+                    "id_team": 0
+                },
+                {
+                    "id": 3,
+                    "name": "Santiago",
+                    "last_name": "Avila",
+                    "edad": 20,
+                    "email": "juanavila8856@gmail.com",
+                    "num_id": 1005210392,
+                    "fecha_ingreso": "14/12/12",
+                    "id_team": 1
+                },
+                {
+                    "id": 4,
+                    "name": "Juan",
+                    "last_name": "Becerra",
+                    "edad": 20,
+                    "email": "juanavila8856@gmail.com",
+                    "num_id": 1005210392,
+                    "fecha_ingreso": "14/12/12",
+                    "id_team": 2
+                }
+            ],
+
+            "team" : [
+                {
+                    "id" : "0",
+                    "name" : "apolo",
+                    "trainer" : "Johlver"
+                },
+                {
+                    "id" : "1",
+                    "name" : "artemis",
+                    "trainer" : "Johlver"
+                },
+                {
+                    "id" : "2",
+                    "name" : "sputnik",
+                    "trainer" : "Miguel"
+                }
+            ],
+
+
+            "skills" : [
+                {
+                    "id" : 0,
+                    "name": "HTML"
+                },
+                {
+                    "id" : 1,
+                    "name": "CSS"
+                },
+                {
+                    "id" : 2,
+                    "name": "JavaScript"
+                },
+                {
+                    "id" : 3,
+                    "name": "GIT"
+                },
+                {
+                    "id" : 4,
+                    "name": "Python"
+                },
+                {
+                    "id" : 5,
+                    "name": "Java"
+                },
+                {
+                    "id" : 6,
+                    "name": "PHP"
+                },
+                {
+                    "id" : 7,
+                    "name": "Ruby"
+                },
+                {
+                    "id" : 8,
+                    "name": "SQL"
+                }
+            ]
+        }
+    ]
+}
