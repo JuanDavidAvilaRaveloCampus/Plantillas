@@ -37,13 +37,10 @@ export default {
     }
 }
 
-let form = document.querySelector('form')
+// let form = document.querySelector('form')
 
-form.addEventListener('submit', (e)=>{
-    e.preventDefault();
-    form = Object.fromEntries(new FormData(e.target));
-
-    console.log(form);
-
-
-})
+// form.addEventListener('submit', (e)=>{
+//     e.preventDefault();
+//     form = Object.fromEntries(new FormData(e.target));
+//     console.log(form);
+// })
