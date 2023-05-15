@@ -21,10 +21,11 @@ export default class myButtons extends HTMLElement {
 
         const ws = new Worker("/assets/Ws/ws.js")
 
-        ws.postMessage({message: 'holi'});
+        ws.postMessage({message : e.target.id});
 
         ws.addEventListener('message', (e) => {
-            console.log(e);
+            console.log(e.data);
+            Worker.terminate;
         })
 
         // if (e.target.id == 'btn_mes') {
