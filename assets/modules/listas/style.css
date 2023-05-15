@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -7,15 +8,15 @@ html, body {
     background-image: url(./assets/img/wp9219298.jpg);
     background-size: contain;
 
-
     box-sizing: border-box;
-    /* background-color: rgb(30, 30, 30); */
-    font-family: 'Inconsolata', monospace;
-    font-family: 'Sigmar', cursive;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Saira Condensed', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 0.58);
+    background-color: rgb(0, 0, 0);
     width: 100%;
     height: min-content;
 
@@ -24,10 +25,10 @@ nav {
     justify-content: space-between;
     box-sizing: border-box;
     /* gap: 80rem; */
-}   
+}
 
 svg {
-    margin-left: 2rem;
+    margin-left: 4rem;
 }
 
 .buttons {
@@ -43,36 +44,41 @@ svg {
 
 .buttons ul {
     display: flex;
+    
     gap: 1rem;
 
     font-size: 1.5rem;
-    list-style-type: none;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .buttons ul li {
     height: 2rem;
-    width: 8rem;
-    /* background-color: rgba(0, 242, 255, 0.268); */
+    width: 6rem;
+    padding-bottom: 4px;
 
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 
+
     border: none;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
 .buttons ul li a:hover {
     transition: .2s all ease-in-out;
-    color: rgba(64, 111, 191, 0.776);
-    /* background-color: rgb(14, 221, 235); */
+    color: rgb(105, 185, 255);
 }
 
-.buttons ul li a{
-    text-decoration: none;
+.buttons ul li a {
     color: white;
 }
+
+.nav_listado {
+    width: 100%;
+    height: max-content;
+
+    /* background-color: red; */
+}
+
+

@@ -1,57 +1,44 @@
-html, body {
+body {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100vw;
-
-    background-image: url(./assets/img/wp9219298.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-
-
-    box-sizing: border-box;
-    /* background-color: rgb(30, 30, 30); */
     font-family: 'Inconsolata', monospace;
     font-family: 'Sigmar', cursive;
 
-    position: relative;
 }
 
-.container {
-    width: 150px;
-    height: 150px;
-    background-color: rgba(255, 153, 0, 0.147);
-
-    border-radius: 6rem;
-    border: none;
-
-    display: flex;
-    align-items: center;
-    align-content: center;
-
-    position: absolute;
-    top: 35%;
-    left: 46%;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 100px 16px inset, black 0px 0px 50px -24px inset, rgba(0, 0, 0, 0.1) 0px 0px 50px 20px;
-    transition: 1s background ease-in-out ;
-}
-
-.iniciar {
+.container_carga {
+    background-color: black;
+    height: 100vh;
     width: 100%;
-    height: 100%;
-    display: flex;
-    justify-items: center;
+
+    display:flex ;
+    justify-content: center;
     align-items: center;
+
+    
 }
 
-a {
-    margin-left: 2.4rem;
-    text-decoration: none;
-    color: black;
-    font-size: 1.2rem;
+.css-1vs2kf0 {
+    position: relative;
+    animation: logo 2s 2s ease;
 }
 
-.container:hover {
-    background-color: rgba(255, 136, 0, 0.459);
+@keyframes logo {
+    0% {
+        top: 0%;
+    }
+    50% {
+        top: -100%;
+    }
+    100%{
+        top: -300%;
+        display: none;
+        z-index: -100;
+    }
+    
 }
+
+
+
+
 
