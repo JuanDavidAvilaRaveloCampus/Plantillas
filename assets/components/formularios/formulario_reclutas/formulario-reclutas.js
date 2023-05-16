@@ -21,12 +21,13 @@ export default class myFormulario_reclutas extends HTMLElement {
         
         this.form = this.shadowRoot.querySelector('form');
         this.form = Object.fromEntries(new FormData(e.target));
+        // console.log(this.form);
 
 
         const ws = new Worker("/assets/Ws/ws_formulario_reclutas.js", {type : "module"})
         ws.postMessage(this.form);
         ws.addEventListener('message', (e) => {
-            console.log(e.data);
+            // console.log(e.data);
             Worker.terminate;
         })
     }
