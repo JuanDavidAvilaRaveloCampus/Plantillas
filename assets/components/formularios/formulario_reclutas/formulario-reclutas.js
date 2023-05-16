@@ -11,18 +11,20 @@ export default class myFormulario_reclutas extends HTMLElement {
     };
 
     handleEvent(e) {
-        (e.type === 'click') ? this.enviarWorker(e) : undefined;
+        (e.type === 'submit') ? this.enviarWorker(e) : undefined;
         // console.log('a');
+        // console.log(e);
     }
 
     enviarWorker(e) {
         e.preventDefault()
-
         
-        const ws = new Worker ("assets/Ws/ws_formulario_reclutas.js", {type: 'module'});
+        this.form = this.shadowRoot.querySelector('form');
+        this.form = Object.fromEntries(new FormData(e.target));
 
-        ws.postMessage({message : 'holi'});
 
+        const ws = new Worker("/assets/Ws/ws_formulario_reclutas.js", {type : "module"})
+        ws.postMessage(this.form);
         ws.addEventListener('message', (e) => {
             console.log(e.data);
             Worker.terminate;
@@ -32,8 +34,8 @@ export default class myFormulario_reclutas extends HTMLElement {
     connectedCallback() {
         Promise.resolve(myFormulario_reclutas.Components()).then(html => {
             this.shadowRoot.innerHTML = html;
-            this.btn = this.shadowRoot.querySelector('#btn');
-            this.btn.addEventListener('click', this.handleEvent.bind(this));
+            this.btn = this.shadowRoot.querySelector('form');
+            this.btn.addEventListener('submit', this.handleEvent.bind(this));
 
         });
     };
