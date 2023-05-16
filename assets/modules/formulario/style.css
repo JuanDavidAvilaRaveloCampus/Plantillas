@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw; 
+
+    background-image: url(../../img/sky-night-scenery-wallpaper-2800x1050_88.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-sizing: border-box;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Saira Condensed', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container_formulario {
+    margin: 0 auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 70%;
+    height: 80vh;
+}
+

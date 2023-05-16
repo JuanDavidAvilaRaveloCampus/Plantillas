@@ -19,7 +19,7 @@ export default class myButtons extends HTMLElement {
     enviarWorker(e) {
 
 
-        const ws = new Worker("/assets/Ws/ws.js")
+        const ws = new Worker("/assets/Ws/ws.js", {type : "module"})
 
         ws.postMessage({message : e.target.id});
 

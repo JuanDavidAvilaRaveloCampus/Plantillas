@@ -1,0 +1,131 @@
+<div class="formulario_reclutas">
+    <h2>Registro</h2>
+    <form action="">
+        <input name="nombre" type="text" placeholder="Nombre">
+        <input name="apellito" type="text" placeholder="Apellito">
+        <input name="edad" type="number" placeholder="Edad">
+
+        
+        <input id="ingreso" type="date">
+
+        <input type="number" placeholder="N° de identificación (cedula)">
+        <span><b>SKILLS</b></span>
+        <div class="container_checkbox">
+            <label for="html">HTML</label>
+            <input id="html" type="checkbox">
+
+            <label for="css">CSS</label>
+            <input id="css" type="checkbox">
+
+            <label for="php">PHP</label>
+            <input id="php" type="checkbox">
+
+            <label for="larabel">Larabel</label>
+            <input id="larabel" type="checkbox">
+
+            <label for="mysql">MySQL</label>
+            <input id="mysql" type="checkbox">
+
+            <label for="javascript">JavaScript</label>
+            <input id="javascript" type="checkbox">
+
+            <label for="java">JAVA</label>
+            <input id="java" type="checkbox">
+
+            <label for="python">Python</label>
+            <input id="python" type="checkbox">
+
+            
+        </div>
+        
+        <input type="submit" value="GUARDAR" id="btn">
+    </form>
+</div>
+
+<style>
+.formulario_reclutas {
+    /* background-color: white;     */
+
+    padding: 5rem;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: rgb(241, 255, 252);
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.202);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2rem;
+    /* background-color: rgba(0, 0, 0, 0.074); */
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    border: none;
+    border-radius: 10px;
+}
+
+input[type="text"], 
+input[type="password"],
+input[type="date"],
+input[type="number"]{
+    width: 20rem;
+    height: 2rem;
+
+    padding: 5px;
+    margin: .5rem;
+
+    border-radius: 10px;
+    border: none;
+
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+#btn{
+    background: white;
+
+    width: 10rem;
+    height: 2rem;
+
+    border-radius: 5px;
+    border: none;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+#btn:hover {
+    background: rgb(250, 233, 250);
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+
+span {
+    margin: .5rem;
+}
+
+.container_checkbox {
+    width: 60%;
+    height: auto;
+
+
+    margin: 1rem;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+    
+}
+
+b {
+    font-size: 1.2rem;
+}
+</style>
