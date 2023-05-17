@@ -4,7 +4,6 @@
 self.addEventListener('message',(e)=>{
     // console.log('aja');
     // console.log(message);
-    let {message} = e.data;
-    postMessage(message);
+    postMessage(e.data);
     // Worker.terminate;
 });

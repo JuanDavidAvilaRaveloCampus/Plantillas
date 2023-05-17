@@ -1,46 +1,48 @@
 function data_form(p) {
-    let name = p.name;
-    let last_name = p.last_name;
-    let age = p.age;
-    let date = p.date;
-    let numero_identificacion = p.numero_identificaciòn;
 
-    // CHECKBOX
-    let skill_html = p.skill_html;
-    let skill_css = p.skill_css;
-    let skill_php = p.skill_php;
-    let skill_larabel = p.skill_larabel;
-    let skill_mysql = p.skill_mysql;
-    let skill_js = p.skill_js;
-    let skill_python = p.skill_python;
 
-    let lista = {
-        skill_html: skill_html,
-        skill_css: skill_css,
-        skill_php: skill_php,
-        skill_larabel: skill_larabel,
-        skill_mysql: skill_mysql,
-        skill_js: skill_js,
-        skill_python: skill_python
-    };
+   const skill = (e) => {
+    let skills = []
+    for(let item in e){
+        item.includes('skill') ? skills.push(item) : undefined;
+    }
+    return skills
+   }
 
     let formulario_recluta = {
-        name: name,
-        last_name: last_name,
-        age: age,
-        date: date,
-        numero_identificacion: numero_identificacion,
+        name: p.name,
+        last_name: p.last_name,
+        age: p.age,
+        date: p.data,
+        numero_identificacion: p.numero_identificacion,
 
-        skills: {
-
-        }
+        skills: skill(p)
     }
 
-    // console.log(lista.value);
-    let val = Object.values(lista);
-    console.log(val);
 
-    let key = Object.keys(lista);
+
+    console.log(formulario_recluta)
+
+    // for (let i = 0; i < lista.length; i++) {
+    //     console.log(log);
+    // }
+        // if (Element != 'undefined'){
+        //     // formulario_recluta.skills.push(Element);
+        // }
+    // console.log(formulario_recluta);
+    // console.log(lista.value);
+    // let key = Object.keys(lista);
+    // console.log(key);
+
+    // let val = Object.values(lista);
+    // console.log(val);
+
+    // val.map((Element)=>{
+    //     if (Element == 'on') {
+    //         console.log(Element);
+    //     }
+    // })
+
 
     
 

@@ -4,17 +4,17 @@ let name = pathName.split('/').pop().replace('.js', '');
 export default class myButtons extends HTMLElement {
     static async Components() {
         return await (await fetch(pathName.replace('.js', '.html'))).text();
-    }
+    };
 
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
         // console.log('im here beatches');
-    }
+    };
 
     handleEvent(e) {
         (e.type === 'click') ? this.enviarWorker(e) : undefined;
-    }
+    };
 
     enviarWorker(e) {
 
@@ -26,7 +26,7 @@ export default class myButtons extends HTMLElement {
         ws.addEventListener('message', (e) => {
             console.log(e.data);
             Worker.terminate;
-        })
+        });
 
         // if (e.target.id == 'btn_mes') {
 
@@ -43,7 +43,7 @@ export default class myButtons extends HTMLElement {
         // } else if (e.target.id == 'btn_estudios') {
         //     console.log(e.target.id);
         // }
-    }
+    };
 
     connectedCallback() {
         Promise.resolve(myButtons.Components()).then(html => {
@@ -53,8 +53,8 @@ export default class myButtons extends HTMLElement {
                 element.addEventListener('click', this.handleEvent.bind(this));
             });
 
-        })
-    }
+        });
+    };
 
 }
 customElements.define(name, myButtons);

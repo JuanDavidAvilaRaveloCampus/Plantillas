@@ -21,6 +21,7 @@ export default class myFormulario_reclutas extends HTMLElement {
         
         this.form = this.shadowRoot.querySelector('form');
         this.form = Object.fromEntries(new FormData(e.target));
+        console.log(this.form);
         // console.log(this.form);
 
 
